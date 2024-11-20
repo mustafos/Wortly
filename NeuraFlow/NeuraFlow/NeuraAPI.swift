@@ -11,14 +11,15 @@ class NeuraAPI {
     private let apiKey: String
     private let urlSession = URLSession.shared
     private var urlRequest: URLRequest {
-        let url = URL(string: "https://api.openai.com/v1/completions")!
+        let url = URL(string: "https://api.openai.com/v1/chat/completions")!
         var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
         headers.forEach {  urlRequest.setValue($1, forHTTPHeaderField: $0) }
         return urlRequest
     }
     
-    private let jsonDecoder = JSONDecoder()
     private let basePrompt: String = "Hi, I'm NeuraFlow. How can I help you today?"
+    private let jsonDecoder = JSONDecoder()
     
     private var headers: [String: String] {
         [
@@ -32,7 +33,7 @@ class NeuraAPI {
     }
     
     private func generateChatGPTPrompt(from text: String) -> String {
-        return basePrompt + "User: \(text)\n\n\nChatGPT"
+        return basePrompt + "User: \(text)\n\n\nChatGPT:"
     }
     
     private func jsonBody(text: String, stream: Bool = true) throws -> Data {
@@ -63,5 +64,22 @@ class NeuraAPI {
         guard 200...299 ~= httpResponse.statusCode else {
             throw "Bad Response: \(httpResponse.statusCode)"
         }
+        
+        return AsyncThrowingStream<String, Error> { continuation in
+            Task(priority: .userInitiated) {
+                do {
+                    for try await line in result.lines {
+                        continuation.yield(line)
+                    }
+                    continuation.finish()
+                } catch {
+                    continuation.finish(throwing: error)
+                }
+            }
+        }
     }
+}
+
+extension String: Error {
+    
 }
