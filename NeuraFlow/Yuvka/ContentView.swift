@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  NeuraFlow
+//  Yuvka
 //
 //  Created by Mustafa Bekirov on 20.11.2024.
 //
