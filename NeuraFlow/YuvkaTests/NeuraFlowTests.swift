@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import NeuraFlow
+@testable import Yuvka
 
 struct NeuraFlowTests {
 

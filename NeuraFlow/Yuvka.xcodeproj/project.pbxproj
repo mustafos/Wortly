@@ -24,25 +24,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6AF880EC2CEE9160003873E4 /* NeuraFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuraFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF880FC2CEE9161003873E4 /* NeuraFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuraFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF881062CEE9161003873E4 /* NeuraFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuraFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF880EC2CEE9160003873E4 /* Yuvka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yuvka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6AF880EE2CEE9160003873E4 /* NeuraFlow */ = {
+		6AF880EE2CEE9160003873E4 /* Yuvka */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NeuraFlow;
+			path = Yuvka;
 			sourceTree = "<group>";
 		};
-		6AF880FF2CEE9161003873E4 /* NeuraFlowTests */ = {
+		6AF880FF2CEE9161003873E4 /* YuvkaTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NeuraFlowTests;
+			path = YuvkaTests;
 			sourceTree = "<group>";
 		};
-		6AF881092CEE9161003873E4 /* NeuraFlowUITests */ = {
+		6AF881092CEE9161003873E4 /* YuvkaUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NeuraFlowUITests;
+			path = YuvkaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		6AF880E32CEE9160003873E4 = {
 			isa = PBXGroup;
 			children = (
-				6AF880EE2CEE9160003873E4 /* NeuraFlow */,
-				6AF880FF2CEE9161003873E4 /* NeuraFlowTests */,
-				6AF881092CEE9161003873E4 /* NeuraFlowUITests */,
+				6AF880EE2CEE9160003873E4 /* Yuvka */,
+				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
+				6AF881092CEE9161003873E4 /* YuvkaUITests */,
 				6AF880ED2CEE9160003873E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		6AF880ED2CEE9160003873E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AF880EC2CEE9160003873E4 /* NeuraFlow.app */,
-				6AF880FC2CEE9161003873E4 /* NeuraFlowTests.xctest */,
-				6AF881062CEE9161003873E4 /* NeuraFlowUITests.xctest */,
+				6AF880EC2CEE9160003873E4 /* Yuvka.app */,
+				6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */,
+				6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AF880EB2CEE9160003873E4 /* NeuraFlow */ = {
+		6AF880EB2CEE9160003873E4 /* Yuvka */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlow" */;
+			buildConfigurationList = 6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Yuvka" */;
 			buildPhases = (
 				6AF880E82CEE9160003873E4 /* Sources */,
 				6AF880E92CEE9160003873E4 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6AF880EE2CEE9160003873E4 /* NeuraFlow */,
+				6AF880EE2CEE9160003873E4 /* Yuvka */,
 			);
-			name = NeuraFlow;
+			name = Yuvka;
 			packageProductDependencies = (
 			);
 			productName = NeuraFlow;
-			productReference = 6AF880EC2CEE9160003873E4 /* NeuraFlow.app */;
+			productReference = 6AF880EC2CEE9160003873E4 /* Yuvka.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6AF880FB2CEE9161003873E4 /* NeuraFlowTests */ = {
+		6AF880FB2CEE9161003873E4 /* YuvkaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlowTests" */;
+			buildConfigurationList = 6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaTests" */;
 			buildPhases = (
 				6AF880F82CEE9161003873E4 /* Sources */,
 				6AF880F92CEE9161003873E4 /* Frameworks */,
@@ -131,18 +131,18 @@
 				6AF880FE2CEE9161003873E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6AF880FF2CEE9161003873E4 /* NeuraFlowTests */,
+				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
 			);
-			name = NeuraFlowTests;
+			name = YuvkaTests;
 			packageProductDependencies = (
 			);
 			productName = NeuraFlowTests;
-			productReference = 6AF880FC2CEE9161003873E4 /* NeuraFlowTests.xctest */;
+			productReference = 6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6AF881052CEE9161003873E4 /* NeuraFlowUITests */ = {
+		6AF881052CEE9161003873E4 /* YuvkaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlowUITests" */;
+			buildConfigurationList = 6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaUITests" */;
 			buildPhases = (
 				6AF881022CEE9161003873E4 /* Sources */,
 				6AF881032CEE9161003873E4 /* Frameworks */,
@@ -154,13 +154,13 @@
 				6AF881082CEE9161003873E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6AF881092CEE9161003873E4 /* NeuraFlowUITests */,
+				6AF881092CEE9161003873E4 /* YuvkaUITests */,
 			);
-			name = NeuraFlowUITests;
+			name = YuvkaUITests;
 			packageProductDependencies = (
 			);
 			productName = NeuraFlowUITests;
-			productReference = 6AF881062CEE9161003873E4 /* NeuraFlowUITests.xctest */;
+			productReference = 6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "NeuraFlow" */;
+			buildConfigurationList = 6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Yuvka" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AF880EB2CEE9160003873E4 /* NeuraFlow */,
-				6AF880FB2CEE9161003873E4 /* NeuraFlowTests */,
-				6AF881052CEE9161003873E4 /* NeuraFlowUITests */,
+				6AF880EB2CEE9160003873E4 /* Yuvka */,
+				6AF880FB2CEE9161003873E4 /* YuvkaTests */,
+				6AF881052CEE9161003873E4 /* YuvkaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		6AF880FE2CEE9161003873E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* NeuraFlow */;
+			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
 			targetProxy = 6AF880FD2CEE9161003873E4 /* PBXContainerItemProxy */;
 		};
 		6AF881082CEE9161003873E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* NeuraFlow */;
+			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
 			targetProxy = 6AF881072CEE9161003873E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,10 +393,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NeuraFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -411,6 +411,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,10 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NeuraFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,6 +441,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +463,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuraFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeuraFlow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuvka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuvka";
 			};
 			name = Debug;
 		};
@@ -480,7 +482,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuraFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeuraFlow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuvka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuvka";
 			};
 			name = Release;
 		};
@@ -521,7 +523,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "NeuraFlow" */ = {
+		6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Yuvka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF8810E2CEE9161003873E4 /* Debug */,
@@ -530,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlow" */ = {
+		6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Yuvka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF881112CEE9161003873E4 /* Debug */,
@@ -539,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlowTests" */ = {
+		6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF881142CEE9161003873E4 /* Debug */,
@@ -548,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "NeuraFlowUITests" */ = {
+		6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF881172CEE9161003873E4 /* Debug */,
