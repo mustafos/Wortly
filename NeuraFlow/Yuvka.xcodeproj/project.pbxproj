@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6AA5FFB72D6BAB490064B2C2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */; };
+		6AA5FFB92D6BAB500064B2C2 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */; };
+		6AA5FFBB2D6BAB560064B2C2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */; };
+		6AA5FFBD2D6BABA10064B2C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */; };
+		6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */; };
+		6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */; };
+		6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6AF880FD2CEE9161003873E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA5FFBB2D6BAB560064B2C2 /* FirebaseDatabase in Frameworks */,
+				6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */,
+				6AA5FFBD2D6BABA10064B2C2 /* FirebaseFirestore in Frameworks */,
+				6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */,
+				6AA5FFB72D6BAB490064B2C2 /* FirebaseAuth in Frameworks */,
+				6AA5FFB92D6BAB500064B2C2 /* FirebaseAuthCombine-Community in Frameworks */,
+				6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +129,13 @@
 			);
 			name = Yuvka;
 			packageProductDependencies = (
+				6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */,
+				6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */,
+				6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */,
+				6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */,
+				6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */,
+				6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */,
+				6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */,
 			);
 			productName = NeuraFlow;
 			productReference = 6AF880EC2CEE9160003873E4 /* Yuvka.app */;
@@ -195,6 +219,9 @@
 			);
 			mainGroup = 6AF880E32CEE9160003873E4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6AF880ED2CEE9160003873E4 /* Products */;
 			projectDirPath = "";
@@ -393,23 +420,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NeuraFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_ASSET_PATHS = "\"Yuvka/Preview Content\"";
+				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -423,23 +451,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NeuraFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_ASSET_PATHS = "\"Yuvka/Preview Content\"";
+				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -560,6 +589,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AF880E42CEE9160003873E4 /* Project object */;
 }

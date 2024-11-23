@@ -2,7 +2,7 @@
 //  WelcomeView.swift
 //  Yuvka
 //
-//  Created by Mustafa Bekirov on 22.02.2024.
+//  Created by Mustafa Bekirov on 22.11.2024.
 //
 
 import SwiftUI
@@ -40,7 +40,7 @@ struct WelcomeView: View {
                     .transition(.blurReplace)
             }
         }
-        .background(.akGreen)
+        .background(.accent)
     }
 }
 
