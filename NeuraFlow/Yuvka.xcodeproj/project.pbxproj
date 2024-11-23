@@ -14,6 +14,7 @@
 		6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */; };
 		6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */; };
 		6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */; };
+		6AA5FFCB2D6BAF080064B2C2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 				6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */,
 				6AA5FFBD2D6BABA10064B2C2 /* FirebaseFirestore in Frameworks */,
 				6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */,
+				6AA5FFCB2D6BAF080064B2C2 /* Kingfisher in Frameworks */,
 				6AA5FFB72D6BAB490064B2C2 /* FirebaseAuth in Frameworks */,
 				6AA5FFB92D6BAB500064B2C2 /* FirebaseAuthCombine-Community in Frameworks */,
 				6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */,
@@ -136,6 +138,7 @@
 				6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */,
 				6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */,
 				6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */,
+				6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */,
 			);
 			productName = NeuraFlow;
 			productReference = 6AF880EC2CEE9160003873E4 /* Yuvka.app */;
@@ -221,6 +224,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6AF880ED2CEE9160003873E4 /* Products */;
@@ -431,7 +435,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +466,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,6 +603,14 @@
 				minimumVersion = 11.8.1;
 			};
 		};
+		6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -636,6 +648,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

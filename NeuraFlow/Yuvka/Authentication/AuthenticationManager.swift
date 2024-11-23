@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
-import FirebaseAuth
 
 enum errors: Error {
     case singUpError
@@ -16,9 +16,8 @@ enum errors: Error {
 
 //l3I0ZIMFJKat2ESImwwd2GvYBmj1 this is the uid for first testig user..
 class AuthenticationManager: ObservableObject, AuthenticationDelegate {
-  
+    
     let db = Firestore.firestore()
-
     
     @Published var isLoggedIn: Bool = false
     @Published var userSession: FirebaseAuth.User?
@@ -38,7 +37,6 @@ class AuthenticationManager: ObservableObject, AuthenticationDelegate {
         } else {
             print("Current User is Nil")
             self.isLoggedIn = false
-            
         }
     }
     
