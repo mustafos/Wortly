@@ -1,5 +1,5 @@
 //
-//  RegisterView.swift
+//  LoginView.swift
 //  Yuvka
 //
 //  Created by Mustafa Bekirov on 23.11.2024.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct RegisterView: View {
+struct LoginView: View {
     
     @Binding var authMode: AuthenticationType
-    @StateObject var viewModel = RegisterUserViewModel()
-    @State var isPresented: Bool = false
+    @ObservedObject var viewModel = LoginViewModel()
     
     var body: some View {
-        ZStack {
+        ZStack{
             Image("welcomScreenBg")
                 .resizable()
                 .scaledToFill()
+            
             VStack {
                 VStack {
                     Text("Start cooking, Start exploring")
@@ -39,7 +39,8 @@ struct RegisterView: View {
                         .frame(maxWidth: .infinity, maxHeight: 55)
                         .background(.white)
                         .cornerRadius(15)
-                        .padding(.horizontal)
+                        .padding(.leading)
+                        .padding(.trailing)
                     }
                     
                     VStack {
@@ -53,16 +54,16 @@ struct RegisterView: View {
                         .frame(maxWidth: .infinity, maxHeight: 55)
                         .background(.white)
                         .cornerRadius(15)
-                        .padding(.horizontal)
+                        .padding(.leading)
+                        .padding(.trailing)
                     }
                 }
                 .foregroundStyle(.black)
                 //SignUpButton
                 Button(action: {
                     print("Username and password =>", viewModel.emailInput, viewModel.password)
-                    viewModel.createUser()
                 }, label: {
-                    Text("Sign Up")
+                    Text("Sign In")
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: 55)
                         .background(.white)
@@ -74,13 +75,13 @@ struct RegisterView: View {
                 
                 VStack {
                     HStack {
-                        Text("have an account?")
-                        Text("Sign In")
+                        Text("Don't have an account?")
+                        Text("Sign Up")
                             .underline(true)
                     }
                     .onTapGesture {
                         withAnimation(.spring) {
-                            authMode = .signIn
+                            authMode = .signUp
                         }
                     }
                 }
@@ -89,14 +90,11 @@ struct RegisterView: View {
                 .padding(.leading, 19)
                 .font(.custom("Poppins-Medium", size: 18))
                 .foregroundStyle(.white)
-                
             }
-        }
-        .sheet(isPresented: $viewModel.isSignedUp, content: {
-            RegisterUserNameView(viewModel: viewModel)
-            //            .presentationBackground(.black)
-                .presentationDetents([.large])
-        })
-        .ignoresSafeArea()
+        }.ignoresSafeArea()
     }
+}
+
+#Preview {
+    LoginView(authMode: .constant(.signIn))
 }
