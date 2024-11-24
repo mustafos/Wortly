@@ -34,8 +34,7 @@ struct WelcomeView: View {
             if authMode == .signUp {
                 RegisterView(authMode: $authMode)
                     .transition(.blurReplace)
-                
-            }else{
+            } else {
                 LoginView(authMode: $authMode)
                     .transition(.blurReplace)
             }
