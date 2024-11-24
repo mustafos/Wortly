@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         Group{
             if AuthManager.isLoggedIn {
-                TabbarView()
+                TabBarView()
             }else{
                 WelcomeView()
             }
