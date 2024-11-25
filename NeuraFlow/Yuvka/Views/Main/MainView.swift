@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct MainView: View {
-
     @ObservedObject var AuthManager = AuthenticationManager.shared
+    
     var body: some View {
-        Group{
+        Group {
             if AuthManager.isLoggedIn {
                 TabBarView()
-            }else{
+            } else {
                 WelcomeView()
             }
-     
         }
     }
 }
