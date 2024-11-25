@@ -56,7 +56,7 @@ struct SettingsView: View {
                         Text("Edit Profile")
                             .padding()
                             .frame(maxWidth: .infinity, maxHeight: 50)
-                            .background(.accentColor)
+                            .background(Color.accentColor)
                             .cornerRadius(35)
                             .padding()
                             .tint(.white)

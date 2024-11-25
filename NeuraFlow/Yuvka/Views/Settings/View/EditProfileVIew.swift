@@ -35,7 +35,6 @@ struct EditProfileView: View {
                         }
                     }
                     .clipped()
-                    
                     .padding(0)
                     .frame(width: 150, height: 150)
                     .overlay {
