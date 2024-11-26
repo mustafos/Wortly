@@ -91,12 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AA5FFF42D6BBB4E0064B2C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AF880E32CEE9160003873E4 = {
 			isa = PBXGroup;
 			children = (
 				6AF880EE2CEE9160003873E4 /* Yuvka */,
 				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
 				6AF881092CEE9161003873E4 /* YuvkaUITests */,
+				6AA5FFF42D6BBB4E0064B2C2 /* Frameworks */,
 				6AF880ED2CEE9160003873E4 /* Products */,
 			);
 			sourceTree = "<group>";
