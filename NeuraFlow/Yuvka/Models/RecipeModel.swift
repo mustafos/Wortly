@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Ingredients: Codable, Hashable{
+struct Ingredients: Codable, Hashable {
     let quantity: String
     let nameOfIngredient: String
 }
@@ -28,7 +28,7 @@ struct Steps: Codable, Hashable {
     let step: String
 }
 
-struct RecipeInstrcutions: Codable, Hashable{
+struct RecipeInstrcutions: Codable, Hashable {
     let steps: [Steps]
     let name: String
 }
@@ -52,7 +52,7 @@ struct FetchedIngredientsByRecipeID: Codable, Hashable {
     let ingredients : [FetchedIngredientsInfo]
 }
 
-struct FetchedRecipe: Codable, Identifiable, Hashable{
+struct FetchedRecipe: Codable, Identifiable, Hashable {
     let id: Int
     let title: String
     let image: String
