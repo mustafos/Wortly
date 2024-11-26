@@ -20,7 +20,7 @@ struct BookmarkView: View {
                                 Text("Bookmarks")
                                     .font(.custom("Poppins-Medium", size: 29))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                    .foregroundStyle(.akGreen)
+                                    .foregroundStyle(.accentColor)
                                     .padding(.leading, 10)
                                 
                                 VStack {
@@ -66,7 +66,7 @@ struct BookmarkView: View {
                                             userCreatedRecipes,
                                             id: \.self ) { recipe in
                                                 NavigationLink(value: recipe) {
-                                                    RecipeCellView_UsersRecipes(recipeData: recipe)
+                                                    RecipeCellViewUsersRecipes(recipeData: recipe)
                                                         .tint(.primary)
                                                 }
                                             }
@@ -90,11 +90,11 @@ struct BookmarkView: View {
                 }
             }
             .navigationDestination(for: RecipeModel.self, destination: { recipe in
-                RecipeDetailsView_UserRecipes(recipeData: recipe)
+                RecipeDetailsViewUserRecipes(recipeData: recipe)
                     .navigationBarBackButtonHidden()
             })
             .navigationDestination(for: FetchedRecipe.self, destination: { recipe in
-                RecipeDetailsVIew(recipeData: recipe)
+                RecipeDetailsView(recipeData: recipe)
                     .navigationBarBackButtonHidden()
             })
             .padding(.top, 80)
