@@ -11,9 +11,9 @@ struct Header: View {
     @ObservedObject var vm: RecipeBookViewModel
     
     var body: some View {
-        VStack{
-            HStack(spacing: 20){
-                VStack(alignment: .leading, spacing: 15){
+        VStack {
+            HStack(spacing: 20) {
+                VStack(alignment: .leading, spacing: 15) {
                     Text("Hello \(vm.user?.username ?? "Loading..")")
                         .font(.custom("Poppins-Medium", size: 17))
                         .foregroundStyle(Color(.gray))
@@ -24,14 +24,11 @@ struct Header: View {
                             AuthenticationManager.shared.signOut()
                         }
                 }
-                VStack{
+                VStack {
                     UserCirclePFP(imageUrl: vm.user?.profileImage ?? "")
                 }
                 .frame(width: 55, height: 55)
                 .clipShape(Circle())
-                
-                
-                
             }
         }
         .padding(.top, 60)
