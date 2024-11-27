@@ -38,7 +38,7 @@ struct RecipeBookView: View {
                 }, icon: "plus")
             }
             .navigationDestination(for: RecipeModel.self, destination: { recipe in
-                RecipeDetailsView_UserRecipes(recipeData: recipe)
+                RecipeDetailsViewUserRecipes(recipeData: recipe)
                     .navigationBarBackButtonHidden()
             })
             .fullScreenCover(isPresented: $isAddRecipeViewOpen, content: {
