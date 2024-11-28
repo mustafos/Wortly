@@ -40,21 +40,21 @@ struct RecipeDetailsView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 28))
                         
                         Button(action: {
-                                print("Hello..")
-                                dismiss()
-                            }, label: {
-                                VStack {
-                                    Image(systemName: "chevron.left")
-                                        .imageScale(.large)
-                                        .foregroundStyle(Color.accentColor)
-                                        .background(
-                                            Circle()
-                                                .fill(Color.white)
-                                                .frame(width: 42, height: 42))
-                                }
-                                .padding(.vertical, 70)
-                                .padding(.horizontal, 40)
-                            })
+                            print("Hello..")
+                            dismiss()
+                        }, label: {
+                            VStack {
+                                Image(systemName: "chevron.left")
+                                    .imageScale(.large)
+                                    .foregroundStyle(Color.accentColor)
+                                    .background(
+                                        Circle()
+                                            .fill(Color.white)
+                                            .frame(width: 42, height: 42))
+                            }
+                            .padding(.vertical, 70)
+                            .padding(.horizontal, 40)
+                        })
                     }
                 }
                 
@@ -128,11 +128,11 @@ struct RecipeDetailsView: View {
                             } else {
                                 if let ingredients = vm.ingredients {
                                     ForEach(ingredients.ingredients, id: \.self) { ingredient in
-                                            VStack {
+                                        VStack {
+                                            HStack {
                                                 HStack {
-                                                    HStack {
-                                                        VStack {
-                                                            KFImage(URL(string: getImageUrlOfIngredient(imageName: ingredient.image)))
+                                                    VStack {
+                                                        KFImage(URL(string: getImageUrlOfIngredient(imageName: ingredient.image)))
                                                             .onFailureImage(.remove)
                                                             .placeholder({
                                                                 ProgressView()
@@ -140,24 +140,24 @@ struct RecipeDetailsView: View {
                                                             .resizable()
                                                             .scaledToFill()
                                                             .clipShape(Circle())
-                                                        }
-                                                        .frame(width: 35, height: 35)
-                                                        
-                                                        Text("\(capitalizedString(ingredient.name))")
-                                                            .font(.custom("Poppins-Regular", size: 15))
                                                     }
+                                                    .frame(width: 35, height: 35)
                                                     
-                                                    Spacer()
-                                                    
-                                                    Text("\(String(format: "%.1f", ingredient.amount.us.value)) \(ingredient.amount.us.unit)")
+                                                    Text("\(capitalizedString(ingredient.name))")
                                                         .font(.custom("Poppins-Regular", size: 15))
                                                 }
+                                                
+                                                Spacer()
+                                                
+                                                Text("\(String(format: "%.1f", ingredient.amount.us.value)) \(ingredient.amount.us.unit)")
+                                                    .font(.custom("Poppins-Regular", size: 15))
                                             }
-                                            .padding(17)
-                                            .frame(maxWidth: .infinity,alignment: .leading)
-                                            .background(.akBg)
-                                            .clipShape(RoundedRectangle(cornerRadius: 14))
                                         }
+                                        .padding(17)
+                                        .frame(maxWidth: .infinity,alignment: .leading)
+                                        .background(.akBg)
+                                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                                    }
                                 } else {
                                     VStack {
                                         HStack {
