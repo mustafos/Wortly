@@ -2,7 +2,7 @@
 //  AddDurationView.swift
 //  Yuvka
 //
-//  Created by Mustafa Bekirov on 24.02.2025.
+//  Created by Mustafa Bekirov on 29.11.2024.
 //
 
 import SwiftUI
