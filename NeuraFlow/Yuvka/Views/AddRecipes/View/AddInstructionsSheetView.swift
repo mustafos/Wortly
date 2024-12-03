@@ -39,7 +39,7 @@ struct AddInstructionsSheetView: View {
                     hideKeyboard()
                 }
             }
-            .background(.akBg)
+            .background(.crispyCrust)
             .padding()
             .gesture(
                 TapGesture()

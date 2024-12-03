@@ -40,7 +40,7 @@ struct AddNoteView: View {
                     hideKeyboard()
                 }
             }
-            .background(.akBg)
+            .background(.crispyCrust)
             .padding()
             .gesture(
                 TapGesture()

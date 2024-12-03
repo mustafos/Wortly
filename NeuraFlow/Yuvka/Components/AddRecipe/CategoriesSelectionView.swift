@@ -18,7 +18,7 @@ struct CategoriesSelectionView: View {
                         Text("\(catg.rawValue)")
                             .padding(.horizontal, 8)
                             .frame(width: 100, height: 40, alignment: .center)
-                            .background(.akBg)
+                            .background(.crispyCrust)
                             .clipShape(RoundedRectangle(cornerRadius: 18))
                     }
                     .onTapGesture {

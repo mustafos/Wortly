@@ -22,7 +22,7 @@ struct SearchBar: View {
             }
             .padding()
             .frame(height: 45)
-            .background(.akBg)
+            .background(.crispyCrust)
             .clipShape(RoundedRectangle(cornerRadius: 18))
             .padding(20)
         }

@@ -18,12 +18,11 @@ struct TabBarView: View {
                 }
                 .tag(SelectedTabs.Book)
             
-            IngredientsFInderOptionsView()
+            IngredientsFinderOptionsView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
                 .tag(SelectedTabs.Search)
-            
             
             BookmarkView()
                 .tabItem {

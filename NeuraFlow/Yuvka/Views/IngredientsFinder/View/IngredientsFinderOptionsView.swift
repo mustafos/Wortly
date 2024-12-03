@@ -39,33 +39,21 @@ struct IngredientsFinderOptionsView: View {
                     VStack {
                         VStack {
                             HStack(spacing: 10) {
-                                LargeSizeOptionBox(
-                                    title: "Search an image in real time",
-                                    bgColor: .indigo,
-                                    icon: "camera",
-                                    action: {
-                                        isCameraOpen.toggle()
-                                    }
+                                LargeSizeOptionBox(title: "Search an image in real time", bgColor: .indigo, icon: "camera", action: {
+                                    isCameraOpen.toggle()
+                                }
                                 )
                                 
                                 VStack(spacing: 10) {
-                                    MediumSizeOptionBox(
-                                        title: "Search By Ingredients",
-                                        bgColor: Color.accentColor,
-                                        icon: "takeoutbag.and.cup.and.straw",
-                                        action: {
-                                            isSearchViewOpen_ByIngredients
-                                                .toggle()
-                                        }
+                                    MediumSizeOptionBox(title: "Search By Ingredients", bgColor: Color.accentColor, icon: "takeoutbag.and.cup.and.straw", action: {
+                                        isSearchViewOpenByIngredients
+                                            .toggle()
+                                    }
                                     )
                                     
-                                    MediumSizeOptionBox(
-                                        title: "Search a specific recipe",
-                                        bgColor: .akBg,
-                                        icon: "magnifyingglass",
-                                        action: {
-                                            isSearchViewOpen.toggle()
-                                        }
+                                    MediumSizeOptionBox(title: "Search a specific recipe", bgColor: .crispyCrust, icon: "magnifyingglass", action: {
+                                        isSearchViewOpen.toggle()
+                                    }
                                     )
                                 }
                             }

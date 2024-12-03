@@ -52,7 +52,7 @@ struct AddDurationView: View {
             }
         }
         .padding()
-        .background(.akBg)
+        .background(.crispyCrust)
         .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }

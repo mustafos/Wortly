@@ -90,7 +90,7 @@ struct BookmarkView: View {
                 }
             }
             .navigationDestination(for: RecipeModel.self, destination: { recipe in
-                RecipeDetailsViewUserRecipes(recipeData: recipe)
+                UserRecipesView(recipeData: recipe)
                     .navigationBarBackButtonHidden()
             })
             .navigationDestination(for: FetchedRecipe.self, destination: { recipe in

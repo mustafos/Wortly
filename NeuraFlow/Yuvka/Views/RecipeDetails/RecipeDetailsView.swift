@@ -103,7 +103,7 @@ struct RecipeDetailsView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: 160, alignment: .topLeading)
-                        .background(.akBg)
+                        .background(.crispyCrust)
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
                     .padding(.horizontal, 15)
@@ -123,7 +123,7 @@ struct RecipeDetailsView: View {
                                 }
                                 .padding(20)
                                 .frame(maxWidth: .infinity,alignment: .leading)
-                                .background(.akBg)
+                                .background(.crispyCrust)
                                 .clipShape(RoundedRectangle(cornerRadius: 14))
                             } else {
                                 if let ingredients = vm.ingredients {

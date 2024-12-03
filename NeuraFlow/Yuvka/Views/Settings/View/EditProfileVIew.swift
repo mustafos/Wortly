@@ -43,7 +43,7 @@ struct EditProfileView: View {
                     
                     Text("Upload proflie ")
                         .font(.custom("Poppins-Regular", size: 18))
-                        .foregroundStyle(.akGreen)
+                        .foregroundStyle(.crispyCrust)
                         .padding(.top, 20)
                 }
                 .tint(.white)

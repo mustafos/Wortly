@@ -10,8 +10,8 @@ import Kingfisher
 import FirebaseAuth
 
 struct UserRecipesView: View {
-    @Environment(\.dismiss) var dismiss
     @ObservedObject var vm = RecipeDetailsViewModel()
+    @Environment(\.dismiss) var dismiss
     
     @State var isRecipeBookmarked: Bool = false
     @State private var showAlert: Bool = false
@@ -139,7 +139,7 @@ struct UserRecipesView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: 160, alignment: .topLeading)
-                        .background(.akBg)
+                        .background(.crispyCrust)
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
                     .padding(.horizontal, 15)

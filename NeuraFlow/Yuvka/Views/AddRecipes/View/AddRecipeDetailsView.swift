@@ -89,7 +89,7 @@ struct AddRecipeDetailsView: View {
                                                 Image(systemName: "photo.fill")
                                                     .imageScale(.large)
                                                     .frame(width: 90, height: 90)
-                                                    .background(.akBg)
+                                                    .background(.crispyCrust)
                                                     .foregroundStyle(Color.accentColor)
                                             }
                                         }
@@ -152,7 +152,7 @@ struct AddRecipeDetailsView: View {
                                                     Image(systemName: "carrot.fill")
                                                         .imageScale(.large)
                                                         .frame(width: 70, height: 70)
-                                                        .background(.akBg)
+                                                        .background(.crispyCrust)
                                                         .foregroundStyle(Color.accentColor)
                                                         .clipShape(Circle())
                                                 }
@@ -201,7 +201,7 @@ struct AddRecipeDetailsView: View {
                                                 Image(systemName: "plus")
                                                     .imageScale(.large)
                                                     .frame(width: 70, height: 70)
-                                                    .background(.akBg)
+                                                    .background(.crispyCrust)
                                                     .foregroundStyle(.accentColor)
                                                     .clipShape(Circle())
                                             })
@@ -232,7 +232,7 @@ struct AddRecipeDetailsView: View {
                                     .padding()
                                     .foregroundStyle(Color(.systemGray2))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(Color(.akBg))
+                                    .background(.crispyCrust)
                                     .clipShape(RoundedRectangle(cornerRadius: 18))
                                     .onTapGesture {
                                         isAddNoteOpen.toggle()
@@ -247,15 +247,15 @@ struct AddRecipeDetailsView: View {
                                     .font(.custom("Poppins-Regular", size: 18))
                                 
                                 Text(instructionsText.isEmpty ? "Tap to add instructions.." : instructionsText)
-                                .font(.custom("Poppins-Regular", size: 18))
-                                .padding()
-                                .foregroundStyle(Color(.systemGray2))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .background(Color(.akBg))
-                                .clipShape(RoundedRectangle(cornerRadius: 18))
-                                .onTapGesture {
-                                    isInstructionsInputOpen.toggle()
-                                }
+                                    .font(.custom("Poppins-Regular", size: 18))
+                                    .padding()
+                                    .foregroundStyle(Color(.systemGray2))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .background(.crispyCrust)
+                                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                                    .onTapGesture {
+                                        isInstructionsInputOpen.toggle()
+                                    }
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()

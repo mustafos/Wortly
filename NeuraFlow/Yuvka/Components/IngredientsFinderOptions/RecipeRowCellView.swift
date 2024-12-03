@@ -52,7 +52,7 @@ struct RecipeRowCellView: View {
         }
         .padding(12)
         .frame(width: 370, height: 85 ,alignment: .leading)
-        .background(.akBg)
+        .background(.crispyCrust)
         .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }
@@ -100,7 +100,7 @@ struct RecipeCellViewUsersRecipes: View {
         }
         .padding(12)
         .frame(width: 370, height: 85 ,alignment: .leading)
-        .background(.akBg)
+        .background(.crispyCrust)
         .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }
