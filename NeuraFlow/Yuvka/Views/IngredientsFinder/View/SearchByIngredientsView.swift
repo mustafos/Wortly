@@ -35,7 +35,7 @@ struct SearchByIngredientsView: View {
                             HStack {
                                 if isSearchingStarted {
                                     Image(systemName: "ellipsis.rectangle.fill")
-                                        .foregroundStyle(.akGreen)
+                                        .foregroundStyle(.accentColor)
                                         .fontWeight(.bold)
                                         .imageScale(.large)
                                         .onTapGesture {
@@ -61,7 +61,7 @@ struct SearchByIngredientsView: View {
                                     } label: {
                                         Image(systemName: "magnifyingglass")
                                             .padding(8)
-                                            .background(.akGreen)
+                                            .background(Color.accentColor)
                                             .clipShape(Circle())
                                             .foregroundStyle(.white)
                                     }
@@ -69,7 +69,7 @@ struct SearchByIngredientsView: View {
                                 }
                             }
                             .padding()
-                            .background(.akBg)
+                            .background(.crispyCrust)
                             .clipShape(RoundedRectangle(cornerRadius: 50))
                         }
                         .animation(.easeInOut(duration: 0.3), value: ingredients.isEmpty)
@@ -87,14 +87,15 @@ struct SearchByIngredientsView: View {
                                                         .font(.custom("Poppins-Medium", size: 13))
                                                         .padding(EdgeInsets(top: 8, leading: 17, bottom: 8, trailing: 17))
                                                         .foregroundColor(Color.white)
-                                                        .background(Color.akGreen)
+                                                        .background(Color.accentColor)
                                                         .clipShape(RoundedRectangle(cornerRadius: 18))
                                                         .onTapGesture {
                                                             ingredients.removeAll { s in
                                                                 s == tag
                                                             }
                                                         }
-                                                }.padding(.all, 16)
+                                                }
+                                                .padding(.all, 16)
                                     }
                                 }
                                 .padding(.horizontal, 20)
@@ -139,7 +140,7 @@ struct SearchByIngredientsView: View {
                         dismissView()
                     } label: {
                         Text("Back")
-                            .foregroundStyle(.akGreen)
+                            .foregroundStyle(Color.accentColor)
                             .font(.custom("Poppins-Medium", size: 15))
                     }
                 }

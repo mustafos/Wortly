@@ -36,7 +36,7 @@ struct SearchRecipeByNameView: View {
                                     } label: {
                                         Text(method.rawValue)
                                             .padding()
-                                            .background(selectedMethod == method ? .akGreen : .akBg)
+                                            .background(selectedMethod == method ? Color.accentColor : .crispyCrust)
                                             .clipShape(RoundedRectangle(cornerRadius: 18))
                                             .kerning(0.86)
                                     }
@@ -89,7 +89,7 @@ struct SearchRecipeByNameView: View {
                 }
             })
             .navigationDestination(for: FetchedRecipe.self) { recipeInfo in
-                RecipeDetailsVIew(recipeData: recipeInfo)
+                RecipeDetailsView(recipeData: recipeInfo)
                     .navigationBarBackButtonHidden()
             }
         }
