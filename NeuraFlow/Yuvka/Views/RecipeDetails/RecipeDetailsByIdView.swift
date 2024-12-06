@@ -9,8 +9,8 @@ import SwiftUI
 import Kingfisher
 
 struct RecipeDetailsByIdView: View {
-    @Environment(\.dismiss) var dismiss
     @ObservedObject var vm = RecipeDetailsViewModel()
+    @Environment(\.dismiss) var dismiss
     
     let recipeId: Int
     
@@ -67,7 +67,7 @@ struct RecipeDetailsByIdView: View {
                                     Image(systemName: "heart")
                                         .imageScale(.large)
                                 }
-                                .tint(.accent)
+                                .tint(Color.accentColor)
                             }
                             .padding(.trailing, 20)
                         }
@@ -148,7 +148,7 @@ struct RecipeDetailsByIdView: View {
                                             }
                                             .padding(17)
                                             .frame(maxWidth: .infinity,alignment: .leading)
-                                            .background(.akBg)
+                                            .background(.crispyCrust)
                                             .clipShape(RoundedRectangle(cornerRadius: 14))
                                         }
                                     } else {
@@ -159,7 +159,7 @@ struct RecipeDetailsByIdView: View {
                                         }
                                         .padding(20)
                                         .frame(maxWidth: .infinity,alignment: .leading)
-                                        .background(.akBg)
+                                        .background(.crispyCrust)
                                         .clipShape(RoundedRectangle(cornerRadius: 14))
                                     }
                                 }
@@ -193,7 +193,7 @@ struct RecipeDetailsByIdView: View {
                                 }
                                 .padding(20)
                                 .frame(maxWidth: .infinity,alignment: .leading)
-                                .background(.akBg)
+                                .background(.crispyCrust)
                                 .clipShape(RoundedRectangle(cornerRadius: 14))
                             }
                             .padding(.top, 10)

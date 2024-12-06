@@ -20,7 +20,7 @@ struct BookmarkView: View {
                                 Text("Bookmarks")
                                     .font(.custom("Poppins-Medium", size: 29))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                    .foregroundStyle(.accentColor)
+                                    .foregroundStyle(Color.accentColor)
                                     .padding(.leading, 10)
                                 
                                 VStack {
@@ -34,7 +34,7 @@ struct BookmarkView: View {
                                     }
                                     .padding()
                                     .frame(height: 55)
-                                    .background(.akBg)
+                                    .background(.crispyCrust)
                                     .clipShape(RoundedRectangle(cornerRadius: 18))
                                 }
                                 
@@ -57,7 +57,7 @@ struct BookmarkView: View {
                                         Text("Your Own Recipes")
                                             .font(.custom("Poppins-Medium", size: 29))
                                             .frame(maxWidth: .infinity, alignment: .leading)
-                                            .foregroundStyle(.akGreen)
+                                            .foregroundStyle(Color.accentColor)
                                             .padding(.leading, 10)
                                     }
                                     
