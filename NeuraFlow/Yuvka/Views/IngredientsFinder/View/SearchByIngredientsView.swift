@@ -35,7 +35,7 @@ struct SearchByIngredientsView: View {
                             HStack {
                                 if isSearchingStarted {
                                     Image(systemName: "ellipsis.rectangle.fill")
-                                        .foregroundStyle(.accentColor)
+                                        .foregroundStyle(Color.accentColor)
                                         .fontWeight(.bold)
                                         .imageScale(.large)
                                         .onTapGesture {

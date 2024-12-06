@@ -1,5 +1,5 @@
 //
-//  RecipeCellVIewLarge.swift
+//  RecipeCellViewLarge.swift
 //  Yuvka
 //
 //  Created by Mustafa Bekirov on 05.12.2024.
