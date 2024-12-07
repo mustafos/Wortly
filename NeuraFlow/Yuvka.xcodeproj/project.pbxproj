@@ -41,9 +41,22 @@
 		6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6AA500852D6C098A0064B2C2 /* Exceptions for "Yuvka" folder in "Yuvka" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6AF880EE2CEE9160003873E4 /* Yuvka */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6AA500852D6C098A0064B2C2 /* Exceptions for "Yuvka" folder in "Yuvka" target */,
+			);
 			path = Yuvka;
 			sourceTree = "<group>";
 		};
@@ -435,6 +448,7 @@
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yuvka/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,6 +480,7 @@
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yuvka/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
