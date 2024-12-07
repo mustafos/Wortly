@@ -20,7 +20,7 @@ struct RecipeBookCard: View {
     }
     
     var body: some View {
-        ForEach(filteredData , id: \.self) { data in
+        ForEach(filteredData, id: \.self) { data in
             NavigationLink(value: data) {
                 VStack(alignment: .leading ,spacing: 7) {
                     VStack(alignment: .leading, spacing: 15) {
@@ -38,9 +38,7 @@ struct RecipeBookCard: View {
                             Spacer()
                             
                             VStack {
-                                RecipeCircleImage(
-                                    imageUrl: data.imageUrl
-                                )
+                                RecipeCircleImage(imageUrl: data.imageUrl)
                             }
                             .frame(width: 60, height: 60)
                         }
@@ -85,7 +83,7 @@ struct RecipeBookCard: View {
                 .padding(.horizontal, 10)
                 .frame(maxWidth: 340,alignment: .leading)
                 .padding(8)
-                .background(.akBg)
+                .background(.crispyCrust)
                 .clipShape(RoundedRectangle(cornerRadius: 24))
             }
             .tint(.primary)

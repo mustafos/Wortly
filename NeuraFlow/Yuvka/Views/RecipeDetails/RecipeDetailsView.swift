@@ -155,7 +155,7 @@ struct RecipeDetailsView: View {
                                         }
                                         .padding(17)
                                         .frame(maxWidth: .infinity,alignment: .leading)
-                                        .background(.akBg)
+                                        .background(.crispyCrust)
                                         .clipShape(RoundedRectangle(cornerRadius: 14))
                                     }
                                 } else {
@@ -166,7 +166,7 @@ struct RecipeDetailsView: View {
                                     }
                                     .padding(20)
                                     .frame(maxWidth: .infinity,alignment: .leading)
-                                    .background(.akBg)
+                                    .background(.crispyCrust)
                                     .clipShape(RoundedRectangle(cornerRadius: 14))
                                 }
                             }
@@ -200,7 +200,7 @@ struct RecipeDetailsView: View {
                             }
                             .padding(20)
                             .frame(maxWidth: .infinity,alignment: .leading)
-                            .background(.akBg)
+                            .background(.crispyCrust)
                             .clipShape(RoundedRectangle(cornerRadius: 14))
                         }
                         .padding(.top, 10)
