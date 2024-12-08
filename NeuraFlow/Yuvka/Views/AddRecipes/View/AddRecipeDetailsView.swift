@@ -26,7 +26,7 @@ struct AddRecipeDetailsView: View {
     @State var isInstructionsInputOpen: Bool = false
     @State private var isImagePickerPresented: Bool = false
     @State private var selectedImage: UIImage?
-    @State private var isImageGallaryOpen: Bool = false
+    @State private var isImageGalleryOpen: Bool = false
     @State private var isAddNoteOpen: Bool = false
     
     @ObservedObject var viewModel = AddRecipeViewModel()
@@ -97,7 +97,7 @@ struct AddRecipeDetailsView: View {
                                     .popover(isPresented: $isCameraMenuOpen, attachmentAnchor: .point(.trailing), arrowEdge: .bottom,  content: {
                                         VStack(content: {
                                             Button(action: {
-                                                isImageGallaryOpen.toggle()
+                                                isImageGalleryOpen.toggle()
                                             }, label: {
                                                 HStack {
                                                     Image(systemName: "photo")
@@ -170,7 +170,7 @@ struct AddRecipeDetailsView: View {
                                                         Spacer()
                                                         
                                                         Button(action: {
-                                                            if  let index = ingredients.firstIndex(of: ing){
+                                                            if  let index = ingredients.firstIndex(of: ing) {
                                                                 ingredients.remove(at: index)
                                                             }
                                                         }, label: {
@@ -213,7 +213,7 @@ struct AddRecipeDetailsView: View {
                                                     .font(.custom("Poppins-Regular", size: 18))
                                             }
                                             TextField(text: $nameOfIngredient) {
-                                                Text("Name of the Ingredien")
+                                                Text("Name of the Ingredients")
                                                     .font(.custom("Poppins-Regular", size: 18))
                                             }
                                         }
@@ -305,7 +305,7 @@ struct AddRecipeDetailsView: View {
                     }
                 }
             }
-            .photosPicker(isPresented: $isImageGallaryOpen, selection: $viewModel.pickedItem)
+            .photosPicker(isPresented: $isImageGalleryOpen, selection: $viewModel.pickedItem)
             .sheet(isPresented: $isAddNoteOpen, content: {
                 AddNoteView(text: $note)
             })
