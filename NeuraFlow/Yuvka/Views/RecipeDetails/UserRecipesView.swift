@@ -139,7 +139,7 @@ struct UserRecipesView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: 160, alignment: .topLeading)
-                        .background(.crispyCrust)
+                        .background(Color(.crispyCrust))
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
                     .padding(.horizontal, 15)
@@ -168,7 +168,7 @@ struct UserRecipesView: View {
                                 }
                                 .padding(17)
                                 .frame(maxWidth: .infinity,alignment: .leading)
-                                .background(.akBg)
+                                .background(Color(.crispyCrust))
                                 .clipShape(RoundedRectangle(cornerRadius: 14))
                             }
                         }
@@ -193,7 +193,7 @@ struct UserRecipesView: View {
                             }
                             .padding(20)
                             .frame(maxWidth: .infinity,alignment: .leading)
-                            .background(.akBg)
+                            .background(Color(.crispyCrust))
                             .clipShape(RoundedRectangle(cornerRadius: 14))
                         }
                         .padding(.top, 10)
@@ -242,4 +242,3 @@ struct UserRecipesView: View {
         )
     )
 }
-

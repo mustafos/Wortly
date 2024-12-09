@@ -20,15 +20,18 @@ struct AddRecipeDetailsView: View {
     @State var preprationTime: String = ""
     @State var cookingTime: String = ""
     @State var category: [String] = []
+    
     @State var categoriesSelected: Category = .all
+    
     @State private var isKeyboardVisible: Bool = false
     @State var isCameraMenuOpen: Bool = false
     @State var isInstructionsInputOpen: Bool = false
     @State private var isImagePickerPresented: Bool = false
     @State private var selectedImage: UIImage?
-    @State private var isImageGalleryOpen: Bool = false
+    @State private var isImageGallaryOpen: Bool = false
     @State private var isAddNoteOpen: Bool = false
     
+    @Environment(\.dismiss) var dimissView
     @ObservedObject var viewModel = AddRecipeViewModel()
     @Environment(\.dismiss) var dismissView
     
@@ -43,33 +46,29 @@ struct AddRecipeDetailsView: View {
                                     .font(.custom("Poppins-Medium", size: 18))
                                     .foregroundStyle(Color(.white))
                             })
-                            
                             Spacer()
-                            
                             Text("Add A Recipe")
                                 .font(.custom("Poppins-SemiBold", size: 20))
                                 .foregroundStyle(Color.accentColor)
-                            
                             Spacer()
-                            
-                            Button(action: {
+                            Button {
                                 Task {
                                     try await viewModel.uploadRecipe (
-                                        name: title,
-                                        ingredients: ingredients,
-                                        instructions: instructionsText,
-                                        category: category,
+                                        name:           title,
+                                        ingredients:    ingredients,
+                                        instructions:   instructionsText,
+                                        category:       category,
                                         preprationTime: preprationTime,
-                                        cookingTime: cookingTime,
-                                        note: note
-                                    )
+                                        cookingTime:    cookingTime,
+                                        note:           note
+                                                                    )
                                     dismissView()
                                 }
-                            }, label: {
+                            } label: {
                                 Text("Add")
                                     .font(.custom("Poppins-Medium", size: 18))
                                     .foregroundStyle(Color(.white))
-                            })
+                            }
                         }
                         .padding()
                         
@@ -85,20 +84,22 @@ struct AddRecipeDetailsView: View {
                                                     .resizable()
                                                     .scaledToFill()
                                                     .frame(width: 90, height: 90)
+                                                
+                                                
                                             } else {
                                                 Image(systemName: "photo.fill")
                                                     .imageScale(.large)
                                                     .frame(width: 90, height: 90)
-                                                    .background(.crispyCrust)
+                                                    .background(Color(.crispyCrust))
                                                     .foregroundStyle(Color.accentColor)
                                             }
                                         }
                                     }
                                     .popover(isPresented: $isCameraMenuOpen, attachmentAnchor: .point(.trailing), arrowEdge: .bottom,  content: {
-                                        VStack(content: {
-                                            Button(action: {
-                                                isImageGalleryOpen.toggle()
-                                            }, label: {
+                                        VStack {
+                                            Button {
+                                                isImageGallaryOpen.toggle()
+                                            } label: {
                                                 HStack {
                                                     Image(systemName: "photo")
                                                         .foregroundStyle(Color.accentColor)
@@ -107,25 +108,23 @@ struct AddRecipeDetailsView: View {
                                                         .foregroundStyle(.white)
                                                 }
                                                 .padding()
-                                            })
-                                            Button(action: {
+                                            }
+                                            Button {
                                                 isImagePickerPresented.toggle()
-                                            }, label: {
+                                            } label: {
                                                 HStack {
                                                     Image(systemName: "camera")
                                                         .foregroundStyle(Color.accentColor)
                                                     Text("Open Camera")
                                                         .font(.custom("Poppins-Regular", size: 18))
                                                         .foregroundStyle(.white)
-                                                }
-                                                .padding()
-                                            })
-                                        })
+                                                }.padding()
+                                            }
+                                        }
                                         .padding()
                                         .frame(minWidth: 40, minHeight: 40)
                                         .presentationCompactAdaptation(.popover)
-                                    })
-                                    .clipShape(Circle())
+                                    }).clipShape(Circle())
                                     
                                     VStack(alignment: .leading) {
                                         Text("Title or Name")
@@ -140,10 +139,9 @@ struct AddRecipeDetailsView: View {
                             }
                             .padding()
                             // Add iN
-                            VStack(alignment: .leading, spacing: 15){
+                            VStack(alignment: .leading, spacing: 15) {
                                 Text("Add Ingredients")
                                     .font(.custom("Poppins-Regular", size: 18))
-                                
                                 if !ingredients.isEmpty {
                                     ForEach(ingredients, id: \.self) { ing in
                                         VStack {
@@ -152,11 +150,10 @@ struct AddRecipeDetailsView: View {
                                                     Image(systemName: "carrot.fill")
                                                         .imageScale(.large)
                                                         .frame(width: 70, height: 70)
-                                                        .background(.crispyCrust)
+                                                        .background(Color(.crispyCrust))
                                                         .foregroundStyle(Color.accentColor)
                                                         .clipShape(Circle())
                                                 }
-                                                
                                                 VStack(alignment: .leading) {
                                                     HStack(alignment: .center) {
                                                         VStack(alignment: .leading) {
@@ -169,15 +166,15 @@ struct AddRecipeDetailsView: View {
                                                         
                                                         Spacer()
                                                         
-                                                        Button(action: {
-                                                            if  let index = ingredients.firstIndex(of: ing) {
+                                                        Button {
+                                                            if  let index = ingredients.firstIndex(of: ing){
                                                                 ingredients.remove(at: index)
                                                             }
-                                                        }, label: {
+                                                        } label: {
                                                             Image(systemName: "x.circle")
                                                                 .foregroundStyle(Color.accentColor)
                                                                 .imageScale(.medium)
-                                                        })
+                                                        }
                                                     }
                                                 }
                                             }
@@ -197,12 +194,13 @@ struct AddRecipeDetailsView: View {
                                                 }
                                                 quantity = ""
                                                 nameOfIngredient = ""
+                                                
                                             }, label: {
                                                 Image(systemName: "plus")
                                                     .imageScale(.large)
                                                     .frame(width: 70, height: 70)
                                                     .background(.crispyCrust)
-                                                    .foregroundStyle(.accentColor)
+                                                    .foregroundStyle(Color.accentColor)
                                                     .clipShape(Circle())
                                             })
                                         }
@@ -213,7 +211,7 @@ struct AddRecipeDetailsView: View {
                                                     .font(.custom("Poppins-Regular", size: 18))
                                             }
                                             TextField(text: $nameOfIngredient) {
-                                                Text("Name of the Ingredients")
+                                                Text("Name of the Ingredien")
                                                     .font(.custom("Poppins-Regular", size: 18))
                                             }
                                         }
@@ -232,7 +230,7 @@ struct AddRecipeDetailsView: View {
                                     .padding()
                                     .foregroundStyle(Color(.systemGray2))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(.crispyCrust)
+                                    .background(Color(.crispyCrust))
                                     .clipShape(RoundedRectangle(cornerRadius: 18))
                                     .onTapGesture {
                                         isAddNoteOpen.toggle()
@@ -245,13 +243,15 @@ struct AddRecipeDetailsView: View {
                             VStack(alignment: .leading, spacing: 15) {
                                 Text("Add Instructions")
                                     .font(.custom("Poppins-Regular", size: 18))
-                                
-                                Text(instructionsText.isEmpty ? "Tap to add instructions.." : instructionsText)
+
+                                Text(instructionsText.isEmpty
+                                     ? "Tap to add instructions.."
+                                     : instructionsText)
                                     .font(.custom("Poppins-Regular", size: 18))
                                     .padding()
                                     .foregroundStyle(Color(.systemGray2))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(.crispyCrust)
+                                    .background(Color(.crispyCrust))
                                     .clipShape(RoundedRectangle(cornerRadius: 18))
                                     .onTapGesture {
                                         isInstructionsInputOpen.toggle()
@@ -295,19 +295,21 @@ struct AddRecipeDetailsView: View {
                                 Text("Add Durations")
                                     .font(.custom("Poppins-Regular", size: 18))
                                 // prepration time picker(menu)
-                                AddDurationView(timeUnit: $timeUnit, timeValue: $preprationTime, title: "Preparation Time")
+                                AddDurationView(timeUnit: $timeUnit,
+                                                timeValue: $preprationTime, title: "Preparation Time")
                                 
                                 // prepration time picker(menu)
-                                AddDurationView(timeUnit: $timeUnit, timeValue: $cookingTime, title: "Cooking Time")
-                            }
-                            .padding()
+                                AddDurationView(timeUnit: $timeUnit,
+                                                timeValue: $cookingTime, title: "Cooking Time")
+                            }.padding()
                         }
                     }
                 }
             }
-            .photosPicker(isPresented: $isImageGalleryOpen, selection: $viewModel.pickedItem)
+            .photosPicker(isPresented: $isImageGallaryOpen, selection: $viewModel.pickedItem)
             .sheet(isPresented: $isAddNoteOpen, content: {
                 AddNoteView(text: $note)
+                
             })
             .sheet(isPresented: $isInstructionsInputOpen, content: {
                 AddInstructionsSheetView(text: $instructionsText)
@@ -353,8 +355,7 @@ struct AddRecipeDetailsView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(.thinMaterial)
             }
-        }
-        .ignoresSafeArea()
+        }.ignoresSafeArea()
     }
 }
 
