@@ -32,8 +32,8 @@ struct AddRecipeDetailsView: View {
     @State private var isAddNoteOpen: Bool = false
     
     @Environment(\.dismiss) var dimissView
-    @ObservedObject var viewModel = AddRecipeViewModel()
     @Environment(\.dismiss) var dismissView
+    @ObservedObject var viewModel = AddRecipeViewModel()
     
     var body: some View {
         ZStack {
@@ -61,7 +61,7 @@ struct AddRecipeDetailsView: View {
                                         preprationTime: preprationTime,
                                         cookingTime:    cookingTime,
                                         note:           note
-                                                                    )
+                                    )
                                     dismissView()
                                 }
                             } label: {
@@ -243,19 +243,19 @@ struct AddRecipeDetailsView: View {
                             VStack(alignment: .leading, spacing: 15) {
                                 Text("Add Instructions")
                                     .font(.custom("Poppins-Regular", size: 18))
-
+                                
                                 Text(instructionsText.isEmpty
                                      ? "Tap to add instructions.."
                                      : instructionsText)
-                                    .font(.custom("Poppins-Regular", size: 18))
-                                    .padding()
-                                    .foregroundStyle(Color(.systemGray2))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(Color(.crispyCrust))
-                                    .clipShape(RoundedRectangle(cornerRadius: 18))
-                                    .onTapGesture {
-                                        isInstructionsInputOpen.toggle()
-                                    }
+                                .font(.custom("Poppins-Regular", size: 18))
+                                .padding()
+                                .foregroundStyle(Color(.systemGray2))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color(.crispyCrust))
+                                .clipShape(RoundedRectangle(cornerRadius: 18))
+                                .onTapGesture {
+                                    isInstructionsInputOpen.toggle()
+                                }
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
