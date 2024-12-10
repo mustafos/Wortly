@@ -20,9 +20,9 @@ Yuvka is a modern iOS application designed to make healthy eating and meal plann
 - **Combine & Async/Await:** For handling asynchronous API requests and state management.
 - **OpenAI API:** For generating meal ideas, cooking tips, and more through AI-powered interactions.
 
-## **📸 Screenshots**
-
-![Screenshots Yuvka App](https://github.com/mustafos/YuvkaApp/blob/master/yuvka_banner.png)
+<!--## **📸 Screenshots**-->
+<!---->
+<!--![Screenshots Yuvka App](https://github.com/mustafos/YuvkaApp/blob/master/yuvka_banner.png) -->
 
 ## **Get Started**
 1. **Download Yuvka** from the App Store.
