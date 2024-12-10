@@ -36,28 +36,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6AF880EC2CEE9160003873E4 /* Yuvka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yuvka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF880EC2CEE9160003873E4 /* Wortly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wortly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6AA500852D6C098A0064B2C2 /* Exceptions for "Yuvka" folder in "Yuvka" target */ = {
+		6AA500852D6C098A0064B2C2 /* Exceptions for "Wortly" folder in "Wortly" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
+			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6AF880EE2CEE9160003873E4 /* Yuvka */ = {
+		6AF880EE2CEE9160003873E4 /* Wortly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6AA500852D6C098A0064B2C2 /* Exceptions for "Yuvka" folder in "Yuvka" target */,
+				6AA500852D6C098A0064B2C2 /* Exceptions for "Wortly" folder in "Wortly" target */,
 			);
-			path = Yuvka;
+			path = Wortly;
 			sourceTree = "<group>";
 		};
 		6AF880FF2CEE9161003873E4 /* YuvkaTests */ = {
@@ -109,7 +109,7 @@
 		6AF880E32CEE9160003873E4 = {
 			isa = PBXGroup;
 			children = (
-				6AF880EE2CEE9160003873E4 /* Yuvka */,
+				6AF880EE2CEE9160003873E4 /* Wortly */,
 				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
 				6AF881092CEE9161003873E4 /* YuvkaUITests */,
 				6AF880ED2CEE9160003873E4 /* Products */,
@@ -119,7 +119,7 @@
 		6AF880ED2CEE9160003873E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AF880EC2CEE9160003873E4 /* Yuvka.app */,
+				6AF880EC2CEE9160003873E4 /* Wortly.app */,
 				6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */,
 				6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */,
 			);
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AF880EB2CEE9160003873E4 /* Yuvka */ = {
+		6AF880EB2CEE9160003873E4 /* Wortly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Yuvka" */;
+			buildConfigurationList = 6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Wortly" */;
 			buildPhases = (
 				6AF880E82CEE9160003873E4 /* Sources */,
 				6AF880E92CEE9160003873E4 /* Frameworks */,
@@ -142,9 +142,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6AF880EE2CEE9160003873E4 /* Yuvka */,
+				6AF880EE2CEE9160003873E4 /* Wortly */,
 			);
-			name = Yuvka;
+			name = Wortly;
 			packageProductDependencies = (
 				6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */,
 				6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */,
@@ -157,7 +157,7 @@
 				6AA500682D6C07950064B2C2 /* TagLayoutView */,
 			);
 			productName = NeuraFlow;
-			productReference = 6AF880EC2CEE9160003873E4 /* Yuvka.app */;
+			productReference = 6AF880EC2CEE9160003873E4 /* Wortly.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6AF880FB2CEE9161003873E4 /* YuvkaTests */ = {
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Yuvka" */;
+			buildConfigurationList = 6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Wortly" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -248,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AF880EB2CEE9160003873E4 /* Yuvka */,
+				6AF880EB2CEE9160003873E4 /* Wortly */,
 				6AF880FB2CEE9161003873E4 /* YuvkaTests */,
 				6AF881052CEE9161003873E4 /* YuvkaUITests */,
 			);
@@ -306,12 +306,12 @@
 /* Begin PBXTargetDependency section */
 		6AF880FE2CEE9161003873E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
+			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
 			targetProxy = 6AF880FD2CEE9161003873E4 /* PBXContainerItemProxy */;
 		};
 		6AF881082CEE9161003873E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* Yuvka */;
+			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
 			targetProxy = 6AF881072CEE9161003873E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,11 +444,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Yuvka/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wortly/Preview Content\"";
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Yuvka/Info.plist;
+				INFOPLIST_FILE = Wortly/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wortly;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				REEXPORTED_LIBRARY_NAMES = Wortly;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,11 +479,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Yuvka/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wortly/Preview Content\"";
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Yuvka/Info.plist;
+				INFOPLIST_FILE = Wortly/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wortly;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,6 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				REEXPORTED_LIBRARY_NAMES = Wortly;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,7 +512,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = KA633DFT94;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -525,7 +531,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = KA633DFT94;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -543,7 +549,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = KA633DFT94;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowUITests;
@@ -560,7 +566,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PCQ5XC84W;
+				DEVELOPMENT_TEAM = KA633DFT94;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowUITests;
@@ -575,7 +581,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Yuvka" */ = {
+		6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Wortly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF8810E2CEE9161003873E4 /* Debug */,
@@ -584,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Yuvka" */ = {
+		6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Wortly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AF881112CEE9161003873E4 /* Debug */,

@@ -1,6 +1,6 @@
 //
-//  YuvkaApp.swift
-//  Yuvka
+//  WortlyApp.swift
+//  Wortly
 //
 //  Created by Mustafa Bekirov on 20.11.2024.
 //
@@ -18,7 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 @main
-struct YuvkaApp: App {
+struct WortlyApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
