@@ -6,97 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6AA500692D6C07950064B2C2 /* TagLayoutView in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA500682D6C07950064B2C2 /* TagLayoutView */; };
-		6AA5FFB72D6BAB490064B2C2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */; };
-		6AA5FFB92D6BAB500064B2C2 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */; };
-		6AA5FFBB2D6BAB560064B2C2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */; };
-		6AA5FFBD2D6BABA10064B2C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */; };
-		6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */; };
-		6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */; };
-		6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */; };
-		6AA5FFCB2D6BAF080064B2C2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6AF880FD2CEE9161003873E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6AF880E42CEE9160003873E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6AF880EB2CEE9160003873E4;
-			remoteInfo = NeuraFlow;
-		};
-		6AF881072CEE9161003873E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6AF880E42CEE9160003873E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6AF880EB2CEE9160003873E4;
-			remoteInfo = NeuraFlow;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		6AF880EC2CEE9160003873E4 /* Wortly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wortly.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuvkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5C7F332DA03AD700452397 /* wortly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wortly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6AA500852D6C098A0064B2C2 /* Exceptions for "Wortly" folder in "Wortly" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6AF880EE2CEE9160003873E4 /* Wortly */ = {
+		6A5C7F352DA03AD700452397 /* wortly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6AA500852D6C098A0064B2C2 /* Exceptions for "Wortly" folder in "Wortly" target */,
-			);
-			path = Wortly;
-			sourceTree = "<group>";
-		};
-		6AF880FF2CEE9161003873E4 /* YuvkaTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = YuvkaTests;
-			sourceTree = "<group>";
-		};
-		6AF881092CEE9161003873E4 /* YuvkaUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = YuvkaUITests;
+			path = wortly;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6AF880E92CEE9160003873E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AA5FFBB2D6BAB560064B2C2 /* FirebaseDatabase in Frameworks */,
-				6AA5FFC32D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community in Frameworks */,
-				6AA5FFBD2D6BABA10064B2C2 /* FirebaseFirestore in Frameworks */,
-				6AA5FFBF2D6BABFC0064B2C2 /* FirebaseFunctions in Frameworks */,
-				6AA5FFCB2D6BAF080064B2C2 /* Kingfisher in Frameworks */,
-				6AA500692D6C07950064B2C2 /* TagLayoutView in Frameworks */,
-				6AA5FFB72D6BAB490064B2C2 /* FirebaseAuth in Frameworks */,
-				6AA5FFB92D6BAB500064B2C2 /* FirebaseAuthCombine-Community in Frameworks */,
-				6AA5FFC12D6BAC060064B2C2 /* FirebaseStorage in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF880F92CEE9161003873E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF881032CEE9161003873E4 /* Frameworks */ = {
+		6A5C7F302DA03AD700452397 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,22 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6AF880E32CEE9160003873E4 = {
+		6A5C7F2A2DA03AD700452397 = {
 			isa = PBXGroup;
 			children = (
-				6AF880EE2CEE9160003873E4 /* Wortly */,
-				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
-				6AF881092CEE9161003873E4 /* YuvkaUITests */,
-				6AF880ED2CEE9160003873E4 /* Products */,
+				6A5C7F352DA03AD700452397 /* wortly */,
+				6A5C7F342DA03AD700452397 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6AF880ED2CEE9160003873E4 /* Products */ = {
+		6A5C7F342DA03AD700452397 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AF880EC2CEE9160003873E4 /* Wortly.app */,
-				6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */,
-				6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */,
+				6A5C7F332DA03AD700452397 /* wortly.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,148 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AF880EB2CEE9160003873E4 /* Wortly */ = {
+		6A5C7F322DA03AD700452397 /* wortly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Wortly" */;
+			buildConfigurationList = 6A5C7F3E2DA03AD900452397 /* Build configuration list for PBXNativeTarget "wortly" */;
 			buildPhases = (
-				6AF880E82CEE9160003873E4 /* Sources */,
-				6AF880E92CEE9160003873E4 /* Frameworks */,
-				6AF880EA2CEE9160003873E4 /* Resources */,
+				6A5C7F2F2DA03AD700452397 /* Sources */,
+				6A5C7F302DA03AD700452397 /* Frameworks */,
+				6A5C7F312DA03AD700452397 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6AF880EE2CEE9160003873E4 /* Wortly */,
+				6A5C7F352DA03AD700452397 /* wortly */,
 			);
-			name = Wortly;
+			name = wortly;
 			packageProductDependencies = (
-				6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */,
-				6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */,
-				6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */,
-				6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */,
-				6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */,
-				6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */,
-				6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */,
-				6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */,
-				6AA500682D6C07950064B2C2 /* TagLayoutView */,
 			);
-			productName = NeuraFlow;
-			productReference = 6AF880EC2CEE9160003873E4 /* Wortly.app */;
+			productName = wortly;
+			productReference = 6A5C7F332DA03AD700452397 /* wortly.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6AF880FB2CEE9161003873E4 /* YuvkaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaTests" */;
-			buildPhases = (
-				6AF880F82CEE9161003873E4 /* Sources */,
-				6AF880F92CEE9161003873E4 /* Frameworks */,
-				6AF880FA2CEE9161003873E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6AF880FE2CEE9161003873E4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6AF880FF2CEE9161003873E4 /* YuvkaTests */,
-			);
-			name = YuvkaTests;
-			packageProductDependencies = (
-			);
-			productName = NeuraFlowTests;
-			productReference = 6AF880FC2CEE9161003873E4 /* YuvkaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6AF881052CEE9161003873E4 /* YuvkaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaUITests" */;
-			buildPhases = (
-				6AF881022CEE9161003873E4 /* Sources */,
-				6AF881032CEE9161003873E4 /* Frameworks */,
-				6AF881042CEE9161003873E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6AF881082CEE9161003873E4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6AF881092CEE9161003873E4 /* YuvkaUITests */,
-			);
-			name = YuvkaUITests;
-			packageProductDependencies = (
-			);
-			productName = NeuraFlowUITests;
-			productReference = 6AF881062CEE9161003873E4 /* YuvkaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6AF880E42CEE9160003873E4 /* Project object */ = {
+		6A5C7F2B2DA03AD700452397 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					6AF880EB2CEE9160003873E4 = {
-						CreatedOnToolsVersion = 16.1;
-					};
-					6AF880FB2CEE9161003873E4 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 6AF880EB2CEE9160003873E4;
-					};
-					6AF881052CEE9161003873E4 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 6AF880EB2CEE9160003873E4;
+					6A5C7F322DA03AD700452397 = {
+						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = 6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Wortly" */;
+			buildConfigurationList = 6A5C7F2E2DA03AD700452397 /* Build configuration list for PBXProject "wortly" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6AF880E32CEE9160003873E4;
+			mainGroup = 6A5C7F2A2DA03AD700452397;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				6AA500672D6C07950064B2C2 /* XCRemoteSwiftPackageReference "TagLayoutView" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6AF880ED2CEE9160003873E4 /* Products */;
+			productRefGroup = 6A5C7F342DA03AD700452397 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AF880EB2CEE9160003873E4 /* Wortly */,
-				6AF880FB2CEE9161003873E4 /* YuvkaTests */,
-				6AF881052CEE9161003873E4 /* YuvkaUITests */,
+				6A5C7F322DA03AD700452397 /* wortly */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6AF880EA2CEE9160003873E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF880FA2CEE9161003873E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF881042CEE9161003873E4 /* Resources */ = {
+		6A5C7F312DA03AD700452397 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,21 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6AF880E82CEE9160003873E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF880F82CEE9161003873E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6AF881022CEE9161003873E4 /* Sources */ = {
+		6A5C7F2F2DA03AD700452397 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,21 +124,8 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6AF880FE2CEE9161003873E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
-			targetProxy = 6AF880FD2CEE9161003873E4 /* PBXContainerItemProxy */;
-		};
-		6AF881082CEE9161003873E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6AF880EB2CEE9160003873E4 /* Wortly */;
-			targetProxy = 6AF881072CEE9161003873E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		6AF8810E2CEE9161003873E4 /* Debug */ = {
+		6A5C7F3C2DA03AD900452397 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,6 +160,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -369,7 +178,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -380,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		6AF8810F2CEE9161003873E4 /* Release */ = {
+		6A5C7F3D2DA03AD900452397 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,6 +224,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -426,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -436,263 +246,84 @@
 			};
 			name = Release;
 		};
-		6AF881112CEE9161003873E4 /* Debug */ = {
+		6A5C7F3F2DA03AD900452397 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wortly/Preview Content\"";
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Wortly/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Wortly;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcycle.wortly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				REEXPORTED_LIBRARY_NAMES = Wortly;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6AF881122CEE9161003873E4 /* Release */ = {
+		6A5C7F402DA03AD900452397 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wortly/Preview Content\"";
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Wortly/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Wortly;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.yuvka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcycle.wortly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				REEXPORTED_LIBRARY_NAMES = Wortly;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		6AF881142CEE9161003873E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA633DFT94;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuvka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuvka";
-			};
-			name = Debug;
-		};
-		6AF881152CEE9161003873E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA633DFT94;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yuvka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yuvka";
-			};
-			name = Release;
-		};
-		6AF881172CEE9161003873E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA633DFT94;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NeuraFlow;
-			};
-			name = Debug;
-		};
-		6AF881182CEE9161003873E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA633DFT94;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mustafa.bakirov.NeuraFlowUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NeuraFlow;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AF880E72CEE9160003873E4 /* Build configuration list for PBXProject "Wortly" */ = {
+		6A5C7F2E2DA03AD700452397 /* Build configuration list for PBXProject "wortly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AF8810E2CEE9161003873E4 /* Debug */,
-				6AF8810F2CEE9161003873E4 /* Release */,
+				6A5C7F3C2DA03AD900452397 /* Debug */,
+				6A5C7F3D2DA03AD900452397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF881102CEE9161003873E4 /* Build configuration list for PBXNativeTarget "Wortly" */ = {
+		6A5C7F3E2DA03AD900452397 /* Build configuration list for PBXNativeTarget "wortly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AF881112CEE9161003873E4 /* Debug */,
-				6AF881122CEE9161003873E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AF881132CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AF881142CEE9161003873E4 /* Debug */,
-				6AF881152CEE9161003873E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AF881162CEE9161003873E4 /* Build configuration list for PBXNativeTarget "YuvkaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AF881172CEE9161003873E4 /* Debug */,
-				6AF881182CEE9161003873E4 /* Release */,
+				6A5C7F3F2DA03AD900452397 /* Debug */,
+				6A5C7F402DA03AD900452397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6AA500672D6C07950064B2C2 /* XCRemoteSwiftPackageReference "TagLayoutView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/giiiita/TagLayoutView.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.8.1;
-			};
-		};
-		6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6AA500682D6C07950064B2C2 /* TagLayoutView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA500672D6C07950064B2C2 /* XCRemoteSwiftPackageReference "TagLayoutView" */;
-			productName = TagLayoutView;
-		};
-		6AA5FFB62D6BAB490064B2C2 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		6AA5FFB82D6BAB500064B2C2 /* FirebaseAuthCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAuthCombine-Community";
-		};
-		6AA5FFBA2D6BAB560064B2C2 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		6AA5FFBC2D6BABA10064B2C2 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		6AA5FFBE2D6BABFC0064B2C2 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		6AA5FFC02D6BAC060064B2C2 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		6AA5FFC22D6BAC1E0064B2C2 /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFA22D6BAABA0064B2C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
-		};
-		6AA5FFCA2D6BAF080064B2C2 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AA5FFC92D6BAF080064B2C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 6AF880E42CEE9160003873E4 /* Project object */;
+	rootObject = 6A5C7F2B2DA03AD700452397 /* Project object */;
 }
