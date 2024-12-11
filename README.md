@@ -1,56 +1,59 @@
-# **Yuvka 🥞**
+# **Wortly 📚**
 
-**Your Personal Meal Planner & Recipe Assistant — Powered by Spoonacular API & SwiftUI**
+**Discover a new word. Every day. Beautifully.**
 
-Yuvka is a modern iOS application designed to make healthy eating and meal planning effortless. Built with SwiftUI and integrated with the Spoonacular API, the app delivers personalized recipe recommendations, nutritional insights, and smart meal planning features — all in a sleek and intuitive interface.
+Wortly is a sleek, modern iOS app designed to enrich your vocabulary — one word at a time. Built with SwiftUI and crafted with love for language learners, writers, and curious minds alike, Wortly delivers a daily word with definitions, examples, and fun facts in a clean and engaging format.
 
-## **🚀 Features**
+## **🌟 Features**
 
-- **Recipe Discovery:** Find recipes based on ingredients, dietary preferences, and cooking time.
-- **Nutritional Analysis:** Get detailed nutritional information for each recipe, including calories, macros, and micronutrients.
-- **Meal Planning:** Plan your weekly meals with dynamic recipe suggestions.
-- **Smart Search:** Search recipes using natural language (e.g., "high-protein breakfast with avocado").
-- **Favorites & History:** Save your favorite recipes and access your search history.
-- **AI-Powered Suggestions:** Leverage AI to get personalized meal recommendations based on your habits and preferences.
+- **Word of the Day** Expand your vocabulary with a new word every day, carefully selected for quality and diversity.
+- **Beautiful Daily Cards** Minimalistic, elegant word cards featuring pronunciation, part of speech, usage, and synonyms.
+- **Favorites & History** Save your favorite words and revisit your vocabulary journey at any time.
+- **Interactive Quizzes (Coming Soon)** Reinforce your learning with daily vocabulary quizzes.
+- **Push Notifications** Get a gentle nudge each day to discover your new word.
+- **Home & Lock Screen Widgets** Stay inspired with today’s word right on your screen.
+
+## **🧠 Premium Features (Wortly+)**
+
+- Unlock extended etymology
+- Access advanced word packs (SAT, GRE, Idioms, Slang, etc.)
+- Enjoy ad-free learning
+- Offline access to your saved words
 
 ## **🛠️ Tech Stack**
 
-- **Swift & SwiftUI:** For building a responsive and modern user interface.
-- **Spoonacular API:** For fetching real-time recipe data and nutritional information.
-- **Combine & Async/Await:** For handling asynchronous API requests and state management.
-- **OpenAI API:** For generating meal ideas, cooking tips, and more through AI-powered interactions.
+- **Swift & SwiftUI:** Native iOS performance with a modern UI
+- **Combine & Async/Await:** Smooth state management and async networking
+- **Local Persistence** Save favorite words, history, and offline content
+- **AI-Powered Content** Use OpenAI to generate fun sentences and learning tips
 
 <!--## **📸 Screenshots**-->
 <!---->
-<!--![Screenshots Yuvka App](https://github.com/mustafos/YuvkaApp/blob/master/yuvka_banner.png) -->
+<!--![Screenshots Wortly App](https://github.com/mustafos/YuvkaApp/blob/master/wortly_banner.png) -->
 
 ## **Get Started**
-1. **Download Yuvka** from the App Store.
-2. **Sign up or log in** to start exploring the app's features.
-3. **Set your dietary preferences** to get tailored meal recommendations.
-4. **Ask the AI** for personalized cooking tips, ingredient substitutions, or quick recipes.
+1. **Download Wortly** from the App Store.
+2. **Set notification preferences** to never miss a word
+3. **Explore** your daily word with audio, usage, and trivia
+4. **Save & quiz** yourself to retain and grow your vocabulary
 
 ## **🏁 Getting Started (For Developers)**
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/mustafos/YuvkaApp/tree/master
-cd YuvkaApp
+git clone https://github.com/mustafos/Wortly.git
+cd Wortly
 ```
 
-2. **Set up the API keys:**
-    - Create a free account on [Spoonacular](https://spoonacular.com/food-api)
-    - Get your API key and add it to your project as an environment variable or directly in the app.
-    - Sign up for the [OpenAI API](https://openai.com/index/openai-api/) for AI-powered features.
+2. **Set up optional API keys** (for pronunciation or AI)
 
-3. **Run the project:**
-    - Open `Yuvka.xcodeproj` in Xcode.
-    - Build and run the app on a simulator or device.
+3. **Open in Xcode**, run on Simulator or device
 
 ## **🤝 Contributing**
-Contributions are welcome! Feel free to fork the repo, create a branch, and submit a pull request.
+Got an idea? Found a bug? Open an issue or pull request!
+Let’s make Wortly the best word-learning companion out there.
 
 ## **🧾 License**
-This project is licensed under the MIT License — see the [LICENSE](https://github.com/mustafos/YuvkaApp/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/mustafos/Wortly/blob/master/LICENSE) file for details.
 
-> Yuvka — Cooking made smarter, healthier, and easier. 🍲
+> Wortly — Vocabulary growth made simple, delightful, and daily. ✨
