@@ -11,7 +11,7 @@ import SwiftUI
 struct WordlyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WordlyView(viewModel: .init())
         }
     }
 }
