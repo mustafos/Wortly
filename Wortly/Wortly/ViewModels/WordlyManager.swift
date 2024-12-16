@@ -5,7 +5,10 @@
 //  Created by Mustafa Bekirov on 16.12.2024.
 //
 
+import AVFoundation
+import NetworkKit
 import SwiftUI
+import WidgetKit
 
 class WordlyManager: ObservableObject {
     
@@ -55,3 +58,37 @@ class WordlyManager: ObservableObject {
             }
         }
     }
+    
+    func audioButtonTapped() {
+        print("WordOfTheDayViewModel: audioButtonTapped")
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch let error as NSError {
+            print("WordOfTheDayViewModel AVAudioSession error: \(error.localizedDescription)")
+        }
+        
+        let utterance = AVSpeechUtterance(string: word)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
+    private func setupAccessibilityLabels() {
+        guard !word.isEmpty else { return }
+        
+        wordOfTheDayAccessibilityLabel = LocalizedStringKey("word_of_the_day.word.\(word).accessibility_label")
+        partOfSpeechAccessibilityLabel = LocalizedStringKey("word_of_the_day.part_of_speech.\(partOfSpeech).accessibility_label")
+        definitionAccessibilityLabel = "\(definitionText.stringValue()), \(wordDescription)"
+        exampleAccessibilityLabel = "\(exampleText.stringValue()), \(wordExample)"
+        originAccessibilityLabel = "\(originText.stringValue()), \(origin)"
+        
+    }
+    
+    private func refreshWidget() {
+        print("WordOfTheDayViewModel: refreshWidget")
+        
+        WidgetCenter.shared.reloadAllTimelines()
+    }
+}
