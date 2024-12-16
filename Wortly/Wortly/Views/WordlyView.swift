@@ -10,7 +10,7 @@ import SwiftUI
 struct WordlyView: View {
     
     @State var showingSettings = false
-    @ObservedObject var viewModel: WordOfTheDayViewModel
+    @ObservedObject var viewModel: WordlyManager
 
     var body: some View {
         NavigationView {
