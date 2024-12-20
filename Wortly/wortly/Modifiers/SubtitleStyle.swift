@@ -2,7 +2,7 @@
 //  SubtitleStyle.swift
 //  wortly
 //
-//  Created by Mustafa Bekirov on 20.04.2025.
+//  Created by Mustafa Bekirov on 20.12.2024.
 //
 
 import SwiftUI
