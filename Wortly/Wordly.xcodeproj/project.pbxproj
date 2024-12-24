@@ -31,6 +31,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Localizable.strings",
+				Modifiers/TitleStyle.swift,
 				WordlyIntents.intentdefinition,
 			);
 			target = 6A5C7F322DA03AD700452397 /* wortly */;
