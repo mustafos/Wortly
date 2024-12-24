@@ -31,6 +31,14 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Localizable.strings",
+				WordlyIntents.intentdefinition,
+			);
+			target = 6A5C7F322DA03AD700452397 /* wortly */;
+		};
+		6A1445E42DB5A1BC0073DC96 /* Exceptions for "wortly" folder in "wortly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
 			);
 			target = 6A5C7F322DA03AD700452397 /* wortly */;
 		};
@@ -53,6 +61,9 @@
 		};
 		6A5C7F352DA03AD700452397 /* wortly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A1445E42DB5A1BC0073DC96 /* Exceptions for "wortly" folder in "wortly" target */,
+			);
 			path = wortly;
 			sourceTree = "<group>";
 		};
@@ -524,6 +535,7 @@
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wortly/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wordly;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -557,6 +569,7 @@
 				DEVELOPMENT_TEAM = KA633DFT94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wortly/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wordly;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
