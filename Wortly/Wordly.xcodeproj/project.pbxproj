@@ -27,12 +27,20 @@
 			);
 			target = 6A14458A2DB592BF0073DC96 /* widgetExtension */;
 		};
+		6A1445DF2DB5A0DA0073DC96 /* Exceptions for "widget" folder in "wortly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Localizable.strings",
+			);
+			target = 6A5C7F322DA03AD700452397 /* wortly */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6A1445912DB592BF0073DC96 /* widget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				6A1445DF2DB5A0DA0073DC96 /* Exceptions for "widget" folder in "wortly" target */,
 				6A1445992DB592C00073DC96 /* Exceptions for "widget" folder in "widgetExtension" target */,
 			);
 			path = widget;
