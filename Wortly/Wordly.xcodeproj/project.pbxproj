@@ -32,6 +32,7 @@
 			membershipExceptions = (
 				"/Localized: Localizable.strings",
 				Extensions/DateFormatter.swift,
+				Extensions/LocalizedStringKey.swift,
 				Modifiers/BodyStyle.swift,
 				Modifiers/SubtitleStyle.swift,
 				Modifiers/TitleStyle.swift,
