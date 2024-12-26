@@ -36,6 +36,7 @@
 				Source/Modifiers/BodyStyle.swift,
 				Source/Modifiers/SubtitleStyle.swift,
 				Source/Modifiers/TitleStyle.swift,
+				Source/WordlyWidgetProvider.swift,
 				WordlyIntents.intentdefinition,
 			);
 			target = 6A5C7F322DA03AD700452397 /* wortly */;
