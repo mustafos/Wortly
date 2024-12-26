@@ -2,17 +2,24 @@
 //  AppIntent.swift
 //  widget
 //
-//  Created by Mustafa Bekirov on 20.04.2025.
+//  Created by Mustafa Bekirov on 26.12.2024.
 //
 
 import WidgetKit
-import AppIntents
+import SwiftUI
+import Intents
 
-struct ConfigurationAppIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource { "Configuration" }
-    static var description: IntentDescription { "This is an example widget." }
+@main
+struct WordlyWidget: Widget {
+    
+    static let kind: String = "WordlyWidget"
 
-    // An example configurable parameter.
-    @Parameter(title: "Favorite Emoji", default: "😃")
-    var favoriteEmoji: String
+    var body: some WidgetConfiguration {
+        IntentConfiguration(kind: WordOfTheDayWidget.kind, intent: ConfigurationIntent.self, provider: WordlyWidgetProvider()) { viewModel in
+            WordOfTheDayWidgetEntryView(viewModel: viewModel)
+        }
+        .configurationDisplayName(LocalizedStringKey("display_name"))
+        .description(LocalizedStringKey("description"))
+        .supportedFamilies([.systemMedium, .systemLarge])
+    }
 }
