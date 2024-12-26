@@ -36,6 +36,7 @@
 				Source/Modifiers/BodyStyle.swift,
 				Source/Modifiers/SubtitleStyle.swift,
 				Source/Modifiers/TitleStyle.swift,
+				Source/WordlyWidgetEntryView.swift,
 				Source/WordlyWidgetProvider.swift,
 				Source/WordlyWidgetViewModel.swift,
 				WordlyIntents.intentdefinition,
