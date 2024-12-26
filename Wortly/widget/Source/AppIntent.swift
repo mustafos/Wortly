@@ -15,7 +15,7 @@ struct WordlyWidget: Widget {
     static let kind: String = "WordlyWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: WordOfTheDayWidget.kind, intent: ConfigurationIntent.self, provider: WordlyWidgetProvider()) { viewModel in
+        IntentConfiguration(kind: WordlyWidget.kind, intent: ConfigurationIntent.self, provider: WordlyWidgetProvider()) { viewModel in
             WordOfTheDayWidgetEntryView(viewModel: viewModel)
         }
         .configurationDisplayName(LocalizedStringKey("display_name"))

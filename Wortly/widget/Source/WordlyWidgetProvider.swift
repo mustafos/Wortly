@@ -12,7 +12,7 @@ import Intents
 
 struct WordlyWidgetProvider: IntentTimelineProvider {
     
-    public typealias ViewModel = WordOfTheDayViewModel
+    public typealias ViewModel = WordlyWidgetViewModel
     
     private let calendar = Calendar.current
     
