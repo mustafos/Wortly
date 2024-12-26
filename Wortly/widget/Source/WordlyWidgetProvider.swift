@@ -17,19 +17,19 @@ struct WordlyWidgetProvider: IntentTimelineProvider {
     private let calendar = Calendar.current
     
     func placeholder(in context: Context) -> ViewModel {
-        print("WordOfTheDayWidgetProvider: placeholder")
+        print("WordlyWidgetProvider: placeholder")
         return ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (ViewModel) -> Void) {
-        print("WordOfTheDayWidgetProvider: getSnapshot")
+        print("WordlyWidgetProvider: getSnapshot")
         
         let entry = ViewModel(date: Date(), wordOfTheDay: Self.sampleWordOfTheDay, configuration: configuration)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<ViewModel>) -> Void) {
-        print("WordOfTheDayWidgetProvider: getTimeline")
+        print("WordlyWidgetProvider: getTimeline")
         
         let currentDate = Date()
         guard let refreshDate = calendar.date(byAdding: .hour, value: 4, to: currentDate) else { return }
@@ -39,11 +39,11 @@ struct WordlyWidgetProvider: IntentTimelineProvider {
             
             switch result {
             case .success(let wordOfTheDay):
-                print("WordOfTheDayWidgetProvider: getTimeline success")
+                print("WordlyWidgetProvider: getTimeline success")
                 entry = ViewModel(date: currentDate, wordOfTheDay: wordOfTheDay, configuration: configuration)
                 
             case .failure(let error):
-                print("WordOfTheDayWidgetProvider: getTimeline failure \(error.localizedDescription)")
+                print("WordlyWidgetProvider: getTimeline failure \(error.localizedDescription)")
                 entry = ViewModel(date: currentDate, wordOfTheDay: nil, configuration: configuration)
             }
             
@@ -53,7 +53,7 @@ struct WordlyWidgetProvider: IntentTimelineProvider {
     }
 }
 
-extension WordOfTheDayWidgetProvider {
+extension WordlyWidgetProvider {
     
     static var sampleWordOfTheDay: WordOfTheDayDTO {
         return WordOfTheDayDTO(
