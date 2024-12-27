@@ -23,14 +23,15 @@
 		6A1445992DB592C00073DC96 /* Exceptions for "widget" folder in "widgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = 6A14458A2DB592BF0073DC96 /* widgetExtension */;
 		};
 		6A1445DF2DB5A0DA0073DC96 /* Exceptions for "widget" folder in "wortly" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Localizable.strings",
+				"/Localized: Resources/Localizable.strings",
+				Resources/WordlyIntents.intentdefinition,
 				Source/Extensions/DateFormatter.swift,
 				Source/Extensions/LocalizedStringKey.swift,
 				Source/Modifiers/BodyStyle.swift,
@@ -39,7 +40,6 @@
 				Source/WordlyWidgetEntryView.swift,
 				Source/WordlyWidgetProvider.swift,
 				Source/WordlyWidgetViewModel.swift,
-				WordlyIntents.intentdefinition,
 			);
 			target = 6A5C7F322DA03AD700452397 /* wortly */;
 		};

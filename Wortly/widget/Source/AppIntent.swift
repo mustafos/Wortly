@@ -5,9 +5,9 @@
 //  Created by Mustafa Bekirov on 26.12.2024.
 //
 
-import WidgetKit
 import SwiftUI
 import Intents
+import WidgetKit
 
 @main
 struct WordlyWidget: Widget {

@@ -5,8 +5,8 @@
 //  Created by Mustafa Bekirov on 26.12.2024.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 import NetworkKit
 import Intents
 

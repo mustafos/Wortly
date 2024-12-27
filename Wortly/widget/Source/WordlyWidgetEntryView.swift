@@ -2,7 +2,7 @@
 //  WordlyWidgetEntryView.swift
 //  wortly
 //
-//  Created by Mustafa Bekirov on 21.04.2025.
+//  Created by Mustafa Bekirov on 26.12.2024.
 //
 
 import SwiftUI

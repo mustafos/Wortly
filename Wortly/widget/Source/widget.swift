@@ -2,7 +2,7 @@
 //  widget.swift
 //  widget
 //
-//  Created by Mustafa Bekirov on 20.04.2025.
+//  Created by Mustafa Bekirov on 27.12.2024.
 //
 
 import WidgetKit
