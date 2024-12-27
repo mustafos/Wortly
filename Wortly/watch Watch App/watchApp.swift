@@ -2,16 +2,20 @@
 //  watchApp.swift
 //  watch Watch App
 //
-//  Created by Mustafa Bekirov on 20.04.2025.
+//  Created by Mustafa Bekirov on 27.12.2024.
 //
 
 import SwiftUI
 
 @main
 struct watch_Watch_AppApp: App {
-    var body: some Scene {
+    @SceneBuilder var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                WordlyView(viewModel: .init())
+            }
         }
+
+        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }
