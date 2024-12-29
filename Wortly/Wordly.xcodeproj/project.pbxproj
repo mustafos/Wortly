@@ -16,6 +16,18 @@
 		6A14458D2DB592BF0073DC96 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6A14458F2DB592BF0073DC96 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		6A1445A42DB5933C0073DC96 /* watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1446282DB5B81F0073DC96 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		6A1446292DB5B81F0073DC96 /* Info-WatchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WatchOS.plist"; sourceTree = "<group>"; };
+		6A14462A2DB5B81F0073DC96 /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
+		6A14462C2DB5B81F0073DC96 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6A14462D2DB5B81F0073DC96 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6A14462F2DB5B81F0073DC96 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		6A1446312DB5B81F0073DC96 /* FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDate.swift; sourceTree = "<group>"; };
+		6A1446322DB5B81F0073DC96 /* ISO8601DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormat.swift; sourceTree = "<group>"; };
+		6A1446342DB5B81F0073DC96 /* DefinitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionDTO.swift; sourceTree = "<group>"; };
+		6A1446352DB5B81F0073DC96 /* ExampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
+		6A1446362DB5B81F0073DC96 /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
+		6A1446392DB5B81F0073DC96 /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkKit.xcodeproj; sourceTree = "<group>"; };
 		6A5C7F332DA03AD700452397 /* wortly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wortly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,10 +119,86 @@
 		6A14458C2DB592BF0073DC96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A14463A2DB5B81F0073DC96 /* NetworkKit */,
 				6A14458D2DB592BF0073DC96 /* WidgetKit.framework */,
 				6A14458F2DB592BF0073DC96 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A14462B2DB5B81F0073DC96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A1446282DB5B81F0073DC96 /* Info-iOS.plist */,
+				6A1446292DB5B81F0073DC96 /* Info-WatchOS.plist */,
+				6A14462A2DB5B81F0073DC96 /* NetworkKit.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6A14462E2DB5B81F0073DC96 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6A14462C2DB5B81F0073DC96 /* API.swift */,
+				6A14462D2DB5B81F0073DC96 /* Endpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6A1446302DB5B81F0073DC96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A14462F2DB5B81F0073DC96 /* DateFormatterExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6A1446332DB5B81F0073DC96 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				6A1446312DB5B81F0073DC96 /* FormattedDate.swift */,
+				6A1446322DB5B81F0073DC96 /* ISO8601DateFormat.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		6A1446372DB5B81F0073DC96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A1446342DB5B81F0073DC96 /* DefinitionDTO.swift */,
+				6A1446352DB5B81F0073DC96 /* ExampleDTO.swift */,
+				6A1446362DB5B81F0073DC96 /* WordOfTheDayDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A1446382DB5B81F0073DC96 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6A14462E2DB5B81F0073DC96 /* API */,
+				6A1446302DB5B81F0073DC96 /* Extensions */,
+				6A1446332DB5B81F0073DC96 /* Formatters */,
+				6A1446372DB5B81F0073DC96 /* Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6A14463A2DB5B81F0073DC96 /* NetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				6A14462B2DB5B81F0073DC96 /* Resources */,
+				6A1446382DB5B81F0073DC96 /* Source */,
+				6A1446392DB5B81F0073DC96 /* NetworkKit.xcodeproj */,
+			);
+			name = NetworkKit;
+			path = ../../WordOfTheDay/NetworkKit;
+			sourceTree = "<group>";
+		};
+		6A14463B2DB5B81F0073DC96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6A5C7F2A2DA03AD700452397 = {
@@ -233,9 +321,18 @@
 			);
 			mainGroup = 6A5C7F2A2DA03AD700452397;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6A1446272DB5B7F30073DC96 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6A5C7F342DA03AD700452397 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6A14463B2DB5B81F0073DC96 /* Products */;
+					ProjectRef = 6A1446392DB5B81F0073DC96 /* NetworkKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6A5C7F322DA03AD700452397 /* wortly */,
@@ -641,6 +738,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A1446272DB5B7F30073DC96 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 6A5C7F2B2DA03AD700452397 /* Project object */;
 }
