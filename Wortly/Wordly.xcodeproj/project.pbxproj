@@ -28,6 +28,7 @@
 		6A1446352DB5B81F0073DC96 /* ExampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDTO.swift; sourceTree = "<group>"; };
 		6A1446362DB5B81F0073DC96 /* WordOfTheDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayDTO.swift; sourceTree = "<group>"; };
 		6A1446392DB5B81F0073DC96 /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkKit.xcodeproj; sourceTree = "<group>"; };
+		6A1446432DB5B8A30073DC96 /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkKit.xcodeproj; sourceTree = "<group>"; };
 		6A5C7F332DA03AD700452397 /* wortly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wortly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +210,7 @@
 				6A1445A82DB5933C0073DC96 /* watch Watch App */,
 				6A14458C2DB592BF0073DC96 /* Frameworks */,
 				6A5C7F342DA03AD700452397 /* Products */,
+				6A1446432DB5B8A30073DC96 /* NetworkKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
